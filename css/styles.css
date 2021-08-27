@@ -32,7 +32,7 @@ p {
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 /* Navigation Bar */
@@ -53,7 +53,7 @@ p {
 .nav-link {
   font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: 300; 
 }
 
 /* Title Image */
@@ -61,13 +61,19 @@ p {
 #title {
   background-color: #ff4c68;
   color: #fff;
-
 }
 
+
 .title-image {
-  width: 60%;
+  /* Reducing size of the image and maintaining aspect ratios */
+  max-width: 300px;   
+  max-height: 600px;
+  width: auto;
+  height: auto;
+  /* width: 30%; previous width set to this auto works better */
   transform: rotate(25deg);
-  z-index: 2; 
+  position: absolute;
+  Right: 20%;
 
 }
 
@@ -81,6 +87,8 @@ p {
 #features {
   padding: 7% 15%;
   background-color: #fff;
+  position: relative;
+
 }
 
 .feature-box {
